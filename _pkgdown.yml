@@ -1,0 +1,15 @@
+url: ~
+template:
+  bootstrap: 5
+  bootswatch: spacelab
+  theme: ayu-mirage
+navbar:
+  structure:
+    left:  [github]
+    right: [reference]
+home:
+  sidebar:
+    structure: [license, citation, dev, authors]
+footer:
+  structure: 
+    right: developed_by

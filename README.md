@@ -1,3 +1,16 @@
+<p>https://github.com/rasmusab/beepr<br>
+https://github.com/jhu-statprogramming-fall-2023/biostat777-project3-part1-willgarneau<br>
+YML changes: modified header, footer, navbar, template and theme</p>
+
+<p>The title of package: beepr<br>
+The original author of the package: Rasmus Bååth (original author), Will Garneau (created pkgdown and data analysis)<br></p>
+
+<p>A goal / description of the package: provide audio feedback in R<br>
+A list of exported functions that are in the package: beep() and beep_on_error() are the two functions exported, both functions add sound to R<br>
+A basic example with one of the functions: beep(1)</p>
+
+
+
 `beepr`: Easily Play Notification Sounds on any Platform
 ========================================================
 

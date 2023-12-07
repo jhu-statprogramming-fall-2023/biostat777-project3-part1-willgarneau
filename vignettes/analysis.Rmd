@@ -1,0 +1,88 @@
+---
+title: "analysis"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(beepr)
+library(readr)
+```
+
+This is example analysis
+
+
+
+Pick any data set you wish from TidyTuesday to analyze.
+
+We will analyze Starbucks data from TidyTuesday
+
+
+```{r}
+starbucks <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-12-21/starbucks.csv')
+```
+
+```{r}
+View(starbucks)
+```
+
+You must describe what is the question you aim to answer with the data and data analysis.
+
+We are studying the caloric content of Starbucks drinks
+
+You must describe and link to where the original data come from that you chose.
+
+
+You must include a link to a data dictionary for the data or create one inside the webpage.
+
+
+Load the data into R
+
+
+In this step, you must test if a directory named data exists locally. If it does not, write an R function that creates it programmatically.
+
+
+Saves the data only once (not each time you knit/render the document).
+
+Read in the data locally each time you knit/render.
+
+Your analysis must include some form of data wrangling and data visualization.
+
+You must use at least six different functions from dplyr, tidyr, lubridate, stringr, or forcats.
+
+```{r}
+starbucks <- starbucks %>% 
+             mutate(`calories/ml` = calories / serv_size_m_l)
+
+```
+
+
+You must use at least two functions from purrr.
+
+Your analysis should include at least three plots with you using at least three different geom_*() functions from ggplot2 (or another package with geom_*() functions).
+
+
+Plots should have titles, subtitles, captions, and human-understandable axis labels.
+
+At least one plot should using a type of faceting (facet_grid() or facet_wrap()).
+
+Apply at least 2 functions from the R package in the vignette.
+
+Summarize and interpret the results in 1-2 sentences.
+
+At the end of the data analysis, list out each of the functions you used from each of the packages (dplyr, tidyr, ggplot2, etc) to help the TA with respect to making sure you met all the requirements described above.
+
+
+
+
+
