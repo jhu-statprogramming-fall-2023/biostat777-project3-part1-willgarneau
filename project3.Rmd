@@ -35,3 +35,14 @@ build_articles_index(pkg = ".")
 ```{r setup, include=FALSE}
 pkgdown::build_site()
 ```
+
+```{r}
+build_site_github_pages(
+  pkg = ".",
+  dest_dir = "docs",
+  clean = TRUE,
+  install = FALSE,
+  new_process = FALSE
+)
+```
+
