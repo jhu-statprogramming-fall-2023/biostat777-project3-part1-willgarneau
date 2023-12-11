@@ -6,7 +6,7 @@ template:
 navbar:
   structure:
     left:  [github]
-    right: [reference]
+    right: [reference, articles]
 home:
   sidebar:
     structure: [license, citation, dev, authors]
